@@ -5,20 +5,20 @@
 class Peeporun < Formula
   desc "A TUI hit counter for Dark Souls, with OBS overlay and theme support"
   homepage "https://github.com/cometpuppy/peeporun"
-  version "0.1.1"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/cometpuppy/peeporun/releases/download/v0.1.1/peeporun_darwin_amd64.tar.gz"
-      sha256 "d267a690672f16cc560ac6a1d83856b2fd1601b0df7ac99bc6578e0499ba2bb8"
+      url "https://github.com/cometpuppy/peeporun/releases/download/v0.1.3/peeporun_darwin_amd64.tar.gz"
+      sha256 "0e26b23fe565ebd212b8295e2fbed35956b335bc11e60616d9177b3325c7b7de"
 
       define_method(:install) do
         bin.install "peeporun"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/cometpuppy/peeporun/releases/download/v0.1.1/peeporun_darwin_arm64.tar.gz"
-      sha256 "7029d96a565e963d87967fbff4776639d748deed50b95ec7332a70507be3efb3"
+      url "https://github.com/cometpuppy/peeporun/releases/download/v0.1.3/peeporun_darwin_arm64.tar.gz"
+      sha256 "3ee838572a673eb3b500c999208bbbe00b30293ed983ca0f98b83078d62343cd"
 
       define_method(:install) do
         bin.install "peeporun"
@@ -28,15 +28,15 @@ class Peeporun < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cometpuppy/peeporun/releases/download/v0.1.1/peeporun_linux_amd64.tar.gz"
-      sha256 "efe5d39a5b16ea6a70981c30c5852f9eedb3bbc22da0a3b87aa69e1857d4384c"
+      url "https://github.com/cometpuppy/peeporun/releases/download/v0.1.3/peeporun_linux_amd64.tar.gz"
+      sha256 "39dcf3ec7cbacf781e9f90a54ce2e74b44c9958d05333d80789a730a7daabdb3"
       define_method(:install) do
         bin.install "peeporun"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cometpuppy/peeporun/releases/download/v0.1.1/peeporun_linux_arm64.tar.gz"
-      sha256 "afb08a32bcc153390eeba23f42747150398417ec9ff985930339c5f1d0852682"
+      url "https://github.com/cometpuppy/peeporun/releases/download/v0.1.3/peeporun_linux_arm64.tar.gz"
+      sha256 "83a138d4cd1c2f0e14ff4e6074af1355673877379730a09fe49f6536f4ca2c83"
       define_method(:install) do
         bin.install "peeporun"
       end
