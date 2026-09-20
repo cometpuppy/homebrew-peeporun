@@ -10,7 +10,7 @@ class Peeporun < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/cometpuppy/peeporun/releases/download/v0.2.2/peeporun_darwin_amd64.tar.gz"
-      sha256 "3376ced8ac1776821b41dadaa2d7efed71e7d856a0889cf75806d1e2dc29a417"
+      sha256 "f0788ac0a27ec0563a7a6eda800b9185335fb545c62ff6497433a36b0d7edf21"
 
       define_method(:install) do
         bin.install "peeporun"
@@ -18,7 +18,7 @@ class Peeporun < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/cometpuppy/peeporun/releases/download/v0.2.2/peeporun_darwin_arm64.tar.gz"
-      sha256 "8d30dfedd2b2bdac8b79be8ea672a75fb296b3ceb80c0894b2f3541b324c3193"
+      sha256 "1213c82952ddb46eaf641f59a385aed216e067512d496047dcb789fe969bb578"
 
       define_method(:install) do
         bin.install "peeporun"
@@ -29,14 +29,14 @@ class Peeporun < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/cometpuppy/peeporun/releases/download/v0.2.2/peeporun_linux_amd64.tar.gz"
-      sha256 "69645dc6c470e75cd4cd1ccde4a232415fe5889647a2307ebea5dae47c26eb83"
+      sha256 "f6c207af046e20f17fccfce89c851b7e3b8a940824750d856957eb54ff061456"
       define_method(:install) do
         bin.install "peeporun"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/cometpuppy/peeporun/releases/download/v0.2.2/peeporun_linux_arm64.tar.gz"
-      sha256 "54bee83297ec41a6875a41985d4e08210cc6d987e284d9c026f2350288330ed0"
+      sha256 "ce1d2ccf49dd95422e774a26ef1e6b40c56eef5e9dcdd8403cc4114e227dc8ee"
       define_method(:install) do
         bin.install "peeporun"
       end
